@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%- typeof title !== 'undefined' ? title: 'No Title' %></title>
+    <%- style.replace(/(\.css)/g, '.css?v=' + version) %>
+  </head>
+  <body>
+    <%- body %>
+    <%- script.replace(/(\.js)/g, '.js?v=' + version) %>
+  </body>
+</html>
+
