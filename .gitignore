@@ -5,4 +5,4 @@ public/styles/core.css
 public/scripts/core.js
 .DS_Store
 .vscode
-.wx-uirc
+*rc
