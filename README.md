@@ -40,7 +40,7 @@ To run the application loading only certain components, use:
 
 To cluster, pass the cluster flag:
 
-	AWS_PROFILE=[profile] NODE_ENV=local node prestart && node app --cluster=true
+	AWS_PROFILE=[profile] NODE_ENV=local npm start -- --cluster=true
 
 To create a new component with default settings, run:
 
