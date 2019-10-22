@@ -13,7 +13,8 @@ module.exports.assets = {
       output: '/public/scripts/core.js',
       // Files to concatenate
       files: [
-        '/scripts/app.js'      ]
+        '/scripts/app.js'
+      ]
     },
     styles: {
       root: '/components/Core/assets',
