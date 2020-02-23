@@ -43,7 +43,7 @@ To cluster, pass the cluster flag:
 	AWS_PROFILE=[profile] NODE_ENV=local npm start -- --cluster=true
 
 ## Understanding Components
-In a cloud environment, you might not want to run all code in a single container instance. Therefore, each component can be loaded individually. If you want to deploy different parts your project in Docker containers or indidivual PM2 applications, this structure will work for you.
+In a cloud environment, you might not want to run all code in a single container instance. Therefore, each component can be loaded individually. If you want to deploy different parts your project in Docker containers or individual PM2 applications, this structure will work for you.
 
 To create a new component with default settings, run:
 
