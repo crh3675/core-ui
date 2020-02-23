@@ -63,13 +63,13 @@ To remove a component with default settings, run:
 
 	node bin/component --action=remove --name=MyName
 
-To run the application loading only certain components, use:
-
-	AWS_PROFILE=[profile] NODE_ENV=local npm start -- --components=Core,Main
-
 To run the application, use:
 
 	AWS_PROFILE=[profile] NODE_ENV=local npm start
+
+To run the application loading only certain components, use:
+
+	AWS_PROFILE=[profile] NODE_ENV=local npm start -- --components=Core,Main
 
 To cluster, pass the cluster flag:
 
