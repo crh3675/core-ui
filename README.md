@@ -18,6 +18,8 @@ There is no ORM.  We use the [Knex](http://knexjs.org/) library for SQL queries 
 
 There are also no global variables.  Each `require` must be defined per library or component file.
 
+The implementation is NOT build using full [ES6](https://www.w3schools.com/js/js_es6.asp) features as we also understand backwards and upgrading can be a challenge.
+
 ## Usage/Install ##
 
 Based on your system, you will need to install [NodeJS 8.x + NPM](http://nodejs.org/download/) to handle NodeJS Dependencies.  It is recommended that this project is installed on a Linux/Unix environment and not Windows.
