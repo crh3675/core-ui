@@ -34,10 +34,6 @@ To run the application, use:
 
 	AWS_PROFILE=[profile] NODE_ENV=local npm start
 
-To run the application loading only certain components, use:
-
-	AWS_PROFILE=[profile] NODE_ENV=local npm start -- --components=Core,Main
-
 To cluster, pass the cluster flag:
 
 	AWS_PROFILE=[profile] NODE_ENV=local npm start -- --cluster=true
@@ -52,5 +48,9 @@ To create a new component with default settings, run:
 To remove a component with default settings, run:
 
 	node bin/component --action=remove --name=MyName
+
+To run the application loading only certain components, use:
+
+	AWS_PROFILE=[profile] NODE_ENV=local npm start -- --components=Core,Main
 
 If you want to view the application in a web browser, simply navigate to [localhost:8080](http://localhost:80807) and you should see the welcome page.
