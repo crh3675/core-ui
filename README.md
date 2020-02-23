@@ -3,6 +3,9 @@
 Core UI is a loosely coupled "quick-start" project for NodeJS Web Applications that require:
 
 - Web Server
+- Logging
+- CORS
+- Policies for Route Access
 - Views
 - Public Assets
 	- Asset Concatenation
