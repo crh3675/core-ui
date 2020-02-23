@@ -1,5 +1,17 @@
 # Core UI
 
+Core UI is a loosely coupled "quick-start" project for NodeJS Web Applications that require:
+
+- Web Server
+- Views
+- Public Assets
+	- Asset Concatenation
+- Session Management
+- Database Access
+- Modular Deploy Capability
+- Cluster Capability
+- AWS Credential Usage
+
 ## Usage/Install ##
 
 Based on your system, you will need to install [NodeJS 8.x + NPM](http://nodejs.org/download/) to handle NodeJS Dependencies.  It is recommended that this project is installed on a Linux/Unix environment and not Windows.
