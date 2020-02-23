@@ -18,7 +18,9 @@ There is no ORM.  We use the [Knex](http://knexjs.org/) library for SQL queries 
 
 There are also no global variables.  Each `require` must be defined per library or component file.
 
-The implementation is NOT build using full [ES6](https://www.w3schools.com/js/js_es6.asp) features as we also understand backwards and upgrading can be a challenge.
+The implementation is NOT build using full [ES6](https://www.w3schools.com/js/js_es6.asp) features as we also understand backwards compatibility and upgrading can be a challenge.
+
+This software has been tested with NodeJS 8, 10, 12.
 
 ## Usage/Install ##
 
