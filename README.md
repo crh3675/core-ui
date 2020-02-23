@@ -33,21 +33,6 @@ Local Dependencies (loosely coupled - you can swap out if you want):
 
 Once you checkout the project, you will need to update the *env/local.js* configuration file.
 
-If you use AWS SSM for configuration variables, you can inclue values in your configuration as such:
-
-	module.exports.database = {
-		connection: {
-			password: 'ssm://some/key/here'
-		}
-	}
-
-Updates to your environment specific configuration file will ovverride any default configurations in your `config` directory.
-
-The *prestart.js* file will replace those values with the appropriate information as long as you have
-an available *AWS_PROFILE* set in *~/.aws/credentials*.
-
-Once setup as such, you should be able to install all dependencies.
-
 Within the project root directory, run:
 
 	npm install
@@ -61,6 +46,21 @@ To run the application, use:
 To cluster, pass the cluster flag:
 
 	AWS_PROFILE=[profile] NODE_ENV=local npm start -- --cluster=true
+
+## AWS Integration
+If you use AWS SSM for configuration variables, you can include values in your configuration as such:
+
+	module.exports.database = {
+		connection: {
+			password: 'ssm://some/key/here'
+		}
+	}
+
+## Configuration
+Updates to your environment specific configuration file will ovverride any default configurations in your `config` directory.
+
+The *prestart.js* file will replace those values with the appropriate information as long as you have
+an available *AWS_PROFILE* set in *~/.aws/credentials*.
 
 ## Understanding Components
 In a cloud environment, you might not want to run all code in a single container instance. Therefore, each component can be loaded individually. If you want to deploy different parts your project in Docker containers or individual PM2 applications, this structure will work for you.
