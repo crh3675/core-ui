@@ -75,5 +75,5 @@ To cluster, pass the cluster flag:
 
 	AWS_PROFILE=[profile] NODE_ENV=local npm start -- --cluster=true
 
-All assets from components will be copied to the *public* directory.  Any assets configured within  *config/assets.js* will be concatenated into a single file in the same *public* directory as per the config in *config/assets*.
+All assets from components will be copied to the *public* directory.  Assets will be concatenated into a single file in the same *public* directory as per the config in *config/assets*.
 
