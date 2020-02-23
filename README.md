@@ -47,7 +47,7 @@ If you use AWS SSM for configuration variables, you can include values in your c
 	}
 
 ## Configuration
-Updates to your environment specific configuration file will ovverride any default configurations in your `config` directory.
+Updates to your environment specific configuration file will override any default configurations in your `config` directory.
 
 The *prestart.js* file will replace those values with the appropriate information as long as you have
 an available *AWS_PROFILE* set in *~/.aws/credentials*.
