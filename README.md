@@ -12,11 +12,13 @@ Core UI is a loosely coupled "quick-start" project for NodeJS Web Applications t
 - Cluster Capability
 - AWS Credential Usage
 
+There is no ORM.  We use the [Knex](http://knexjs.org/) library for SQL queries which is a lot less code management and does the same job without requiring strict model definitions.
+
 ## Usage/Install ##
 
 Based on your system, you will need to install [NodeJS 8.x + NPM](http://nodejs.org/download/) to handle NodeJS Dependencies.  It is recommended that this project is installed on a Linux/Unix environment and not Windows.
 
-Local Dependencies:
+Local Dependencies (loosely coupled - you can swap out if you want):
 
 * Redis (for sessions)
 * MySQL2 (for database)
