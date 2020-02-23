@@ -65,7 +65,7 @@ To remove a component with default settings, run:
 
 To run the application loading only certain components, use:
 
-	AWS_PROFILE=[profile] NODE_ENV=local npm start -- --components=Core,MainAll assets from components will be copied to the *public* directory.  Any assets configured within  *config/assets.js* will be simply concactenated into a single file in the same *public* directory.
+	AWS_PROFILE=[profile] NODE_ENV=local npm start -- --components=Core,Main
 
 To run the application, use:
 
